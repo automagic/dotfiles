@@ -24,7 +24,7 @@ brew install bash
 
 brew install bash-completion
 
-brew install homebrew/completions/brew-cask-completion
+brew install brew-cask-completion
 
 # generic colouriser  http://kassiopeia.juls.savba.sk/~garabik/software/grc/
 brew install grc
@@ -78,6 +78,7 @@ brew install pidcat   # colored logcat guy
 
 brew install ncdu # find where your diskspace went
 
+brew install bind
 brew install zsh
 
 # Remove outdated versions from the cellar

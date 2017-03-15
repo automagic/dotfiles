@@ -1,6 +1,8 @@
 # copy to ~/.ssh/config
 
 Host github.com
+	Hostname github.com
+	User git
 	ControlMaster auto
 	ControlPersist 120
 

@@ -30,11 +30,9 @@ brew cask install miro-video-converter
 brew cask install horndis               # usb tethering
 
 # browsers
-# brew cask install google-chrome-canary
-# brew cask install firefoxnightly
-# brew cask install webkit-nightly
-# brew cask install chromium
-# brew cask install torbrowser
+brew cask install google-chrome-canary
+brew cask install firefoxnightly
+brew cask install chromium
 
 # less often
 brew cask install disk-inventory-x
@@ -42,10 +40,3 @@ brew cask install screenflow
 brew cask install vlc
 brew cask install gpgtools
 brew cask install licecap
-# brew cask install utorrent
-
-
-# Not on cask but I want regardless.
-
-# File Multi Tool 5
-# Phosphor

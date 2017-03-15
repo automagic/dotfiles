@@ -7,7 +7,6 @@
 # git credential file
 .gitconfig.local
 
-
 # no thx
 node_modules
 
@@ -23,13 +22,25 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
-# Compiled Python files
-*.pyc
-
-# fish shell
-fishd.*
-.config/fish/fish_history
-fish/fish_history
-
 # random
 shilocation
+
+# VS
+.vscode/
+
+# SublimeText
+*.sublime-project
+*.sublime-workspace
+
+# 
+# Python
+#
+
+# virtualenv
+venv/
+.env
+
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class

@@ -5,7 +5,6 @@ function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
-
 # find shorthand
 function f() {
 	find . -name "$1" 2>&1 | grep -v 'Permission denied'
@@ -29,8 +28,6 @@ cdf() {  # short for cdfinder
   cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
 }
 
-
-
 # git commit browser. needs fzf
 log() {
   git log --graph --color=always \
@@ -41,8 +38,6 @@ log() {
                 xargs -I % sh -c 'git show --color=always % | less -R'"
 }
 
-
-
 # Start an HTTP server from a directory, optionally specifying the port
 function server() {
 	local port="${1:-8000}"
@@ -52,13 +47,10 @@ function server() {
 	statik --port "$port" .
 }
 
-
 # Copy w/ progress
 cp_p () {
   rsync -WavP --human-readable --progress $1 $2
 }
-
-
 
 # get gzipped size
 function gz() {
@@ -142,7 +134,6 @@ camerausedby() {
 	echo -e "Recent camera uses:\n$usedby"
 }
 
-
 # animated gifs from any video
 # from alex sexton   gist.github.com/SlexAxton/4989674
 gifify() {
@@ -169,7 +160,6 @@ webmify(){
 function nullify() {
   "$@" >/dev/null 2>&1
 }
-
 
 # visual studio code. a la `subl`
 function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCodeInsiders" --args $*; }
